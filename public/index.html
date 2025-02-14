@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+    integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <script src="main.js" defer></script>
+  
+  <style>
+    .overlay-container {
+      position: relative;
+    }
+
+    #virtual {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div>
+
+    <div class="overlay-container">
+      <video id="inputVideo" autoplay muted playsinline></video>
+      <canvas id="overlay" style="position: absolute; top: 0; left: 0" />
+    </div>
+    
+    <canvas id="virtual" />
+  </body>
+</body>
+</html>

@@ -1,4 +1,0 @@
-[submodule "face-api.js"]
-	path = face-api.js
-	url = ./face-api.js
-    ignore = dirty
